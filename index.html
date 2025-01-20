@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" href="data:,">
+
+</head>
+<body>
+    <div id="container">
+        <div id="app">
+            <!--Search Bar-->
+            <div id="searchBar">
+                <input type="text" id="searchBarInput" placeholder="Search by City">
+                <!-- <button onclick="getWeather()" id="searchIcon"><i class="fa fa-search" aria-hidden="true"></i></button> -->
+            </div>
+            <!-- Date and City -->
+            <div id="info">
+                <p id="date"></p>
+                <h3 id="city"></h3>
+            </div>
+            <!-- Temp Image -->
+             
+             <div id="tempImg">
+    
+             </div>
+            <!-- Description -->
+            <div id="description">
+    
+            </div>
+    
+            <!-- Temp -->
+            <div id="temp">
+    
+            </div>
+            <!-- Humidity -->
+             <div id="humidity"></div>
+            <!-- Extra Info -->
+            <div id="extraInfo">
+                <div class="col">
+                    <div class="info">
+                        <h5>Highs</h5>
+                        <p id="tempMax"></p>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="info">
+                        <h5>Lows</h5>
+                        <p id="tempMin"></p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <div id="forecast">
+            <div id="day-1">
+                <p id="tomorrow-1"></p>
+                <div id="tempImg1"></div>
+                <p id="content-1"></p>
+                <p id="temp-1"></p>
+                
+                <p id="humidity-1"></p>
+            </div>
+            <div id="day-2">
+                <p id="tomorrow-2"></p>
+                <div id="tempImg2"></div>
+                <p id="content-2"></p>
+                <p id="temp-2"></p>
+                
+                <p id="humidity-2"></p>
+            </div>
+            <div id="day-3">
+                <p id="tomorrow-3"></p>
+                <div id="tempImg3"></div>
+                <p id="content-3"></p>
+                <p id="temp-3"></p>
+                
+                <p id="humidity-3"></p>
+            </div>
+            <div id="day-4">
+                <p id="tomorrow-4"></p>
+                <div id="tempImg4"></div>
+                <p id="content-4"></p>
+                <p id="temp-4"></p>
+                
+                <p id="humidity-4"></p>
+                
+            </div>
+            <div id="day-5">
+                <p id="tomorrow-5"></p>
+                <div id="tempImg5"></div>
+                <p id="content-5"></p>
+                <p id="temp-5"></p>
+                
+                <p id="humidity-5"></p>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="weather.js"></script>
+    <script src="forecast.js"></script>
+</body>
+</html>

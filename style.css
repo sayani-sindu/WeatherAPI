@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrant', 'sans-serif';
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6A9AB0;
+}
+
+#app{
+    position: relative;
+    width: 400px;
+    height: 420px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 40px 0;
+    overflow: hidden;
+    border-radius: 45px;
+    background-image: url('weatherAppBack.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 10px;
+}
+
+#searchBar{
+    display: flex;
+    color: white;
+    padding: 0 40px;
+    margin-bottom: 30px;
+
+}
+#searchBarInput{
+    background-color: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    color: white;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+}
+
+#searchBarInput::placeholder{
+    color: #fff;
+    opacity: 0.6;
+}
+
+/* Remove background color for Chrome, Safari, and newer Edge */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    box-shadow: 0 0 0px 1000px transparent inset !important; /* Keep the background white */
+    -webkit-text-fill-color: black !important; /* Text color */
+    background-color: none;
+}
+
+
+#info{
+    line-height: 1.5rem;
+    color: #fff;
+}
+
+#info h3{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: .6rem;
+}
+
+#description{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#temp{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#humidity{
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* #searchIcon{
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+} */
+
+#extraInfo{
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+#extraInfo h5{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+
+#forecast{
+    height: 200px;
+    width: 900px;
+    padding: 0 20px;
+    box-shadow: 0 0 5px;
+    border-radius: 30px;
+    background-image: url('forecast_image.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+#forecast div{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#forecast div p{
+    color: #000305;
+}
+
+#content-1, #content-2, #content-3, #content-4, #content-5{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#temp-1, #temp-2, #temp-3, #temp-4, #temp-5{
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+#humidity-1,  #humidity-2, #humidity-3, #humidity-4, #humidity-5{
+    font-size: medium;
+    
+}
