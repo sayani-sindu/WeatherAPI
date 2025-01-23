@@ -1,5 +1,8 @@
 # Weather API Application
 
+# Deployment 
+- **Link** - https://sayani-sindu.github.io/WeatherAPI/
+
 ## Description
 This project is a web application that provides a five-day weather forecast using the OpenWeatherMap API. The app displays city-specific weather details, such as temperature, weather conditions, and humidity, with updates available every three hours. The project demonstrates skills in API integration, JavaScript, and responsive web design to deliver an intuitive and seamless user experience.
 
